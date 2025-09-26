@@ -19,9 +19,11 @@
 
         .container{
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 300px;
+            margin-top: 100px;
+            padding: 10px;
             gap: 100px;
         }
 
@@ -31,12 +33,18 @@
             border-radius: 10px;
             padding: 10px;
           background-color: white;
+          box-shadow: 0 0 5px black;
         }
 
         .form{
+            padding: 15px 20px;
+            background-color: white;
             display: flex;
             flex-direction: column;
             gap: 30px;
+            border-radius: 10px;
+            
+          
         }
 
         .btn{
@@ -48,7 +56,15 @@
 
 
         }
-
+        @media (min-width: 877px) {
+            .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+       
+        }
+        }
 
     </style>
 </head>
@@ -56,7 +72,7 @@
 <body>
 
     <div class="container">
-        <div
+        <div id="cart"
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <div class="flex justify-end px-4 pt-4">
                 <button id="dropdownButton" data-dropdown-toggle="dropdown"
